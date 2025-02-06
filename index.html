@@ -10,19 +10,37 @@
             margin: 20px;
             background-color: #f4f4f4;
             text-align: center;
+            background-image: url('https://images.unsplash.com/photo-1521412644187-c49fa049e84d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNjUyOXwwfDF8c2VhcmNofDV8fHNwb3J0c3xlbnwwfHx8fDE2NjI0Mjk1ODQ&ixlib=rb-1.2.1&q=80&w=1600');
+            background-size: cover;
+            background-attachment: fixed;
         }
         h1 {
-            color: #2c3e50;
+            color: #ffffff;
+            background: rgba(44, 62, 80, 0.8);
+            padding: 15px;
+            border-radius: 10px;
         }
         h2 {
-            color: #2980b9;
-            margin-top: 30px;
+            color: #ffffff;
+            background: rgba(41, 128, 185, 0.8);
+            padding: 10px;
+            border-radius: 8px;
         }
-        p {
-            color: #555;
+        h4 {
+            color: #ffffff;
             max-width: 800px;
             margin: 0 auto 20px;
             line-height: 1.6;
+            padding: 10px;
+            border-radius: 8px;
+        }
+        p {
+            color: #ffffff;
+            max-width: 800px;
+            margin: 0 auto 20px;
+            line-height: 1.6;
+            padding: 10px;
+            border-radius: 8px;
         }
         .container {
             display: flex;
@@ -30,20 +48,25 @@
             justify-content: center;
             gap: 20px;
             margin-top: 20px;
+            animation: fadeIn 1s ease-in-out;
         }
         .video {
             background: white;
             padding: 15px;
             border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
             width: 400px;
+            transition: transform 0.3s;
+        }
+        .video:hover {
+            transform: scale(1.05);
         }
         iframe {
             width: 100%;
             height: 250px;
             border-radius: 8px;
         }
-        .team {
+         .team {
             margin-top: 40px;
         }
         .team-container {
@@ -66,6 +89,13 @@
             border-radius: 50%;
             margin-bottom: 10px;
         }
+        a{
+        text-decoration: none;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
     </style>
 </head>
 <body>
@@ -73,7 +103,6 @@
     <p>Este site foi criado para apresentar alguns esportes e atividades recreativas em Língua Brasileira de Sinais (Libras). Aqui, você poderá visualizar vídeos demonstrando sinais para esportes populares, atividades recreativas, equipamentos esportivos e emoções ligadas ao esporte.</p>
     
     <h2>1. Esportes</h2>
-    <p>Os esportes são fundamentais para a saúde física e mental. A seguir, veja como sinalizar alguns dos esportes mais praticados em Libras.</p>
     <div class="container">
         <div class="video">
             <h3>Futebol</h3>
@@ -94,7 +123,6 @@
     </div>
     
     <h2>2. Atividades Recreativas</h2>
-    <p>Além dos esportes, atividades recreativas são essenciais para o bem-estar. Veja abaixo como sinalizar algumas dessas atividades.</p>
     <div class="container">
         <div class="video">
             <h3>Caminhada</h3>
@@ -115,7 +143,6 @@
     </div>
     
     <h2>3. Equipamentos Esportivos</h2>
-    <p>Os equipamentos são essenciais para a prática esportiva. Aqui estão alguns sinais em Libras para itens esportivos comuns.</p>
     <div class="container">
         <div class="video">
             <h3>Bola</h3>
@@ -136,9 +163,8 @@
     </div>
     
     <h2>4. Sentimentos e Emoções no Esporte</h2>
-    <p>O esporte envolve muitas emoções, desde a alegria até a superação. Aqui estão sinais para algumas dessas emoções.</p>
     <div class="container">
-        <div class="video">
+       <div class="video">
             <h3>Alegria</h3>
             <iframe width="560" height="315" src="https://www.youtube.com/embed/5mHQ2CAURjA?si=iHgkJIFVUJqCvo74" allowfullscreen></iframe>
         </div>
@@ -155,9 +181,8 @@
             <iframe src="https://www.youtube.com/embed/jRQ8g3YwOH4?si=q413m9XjBWq7-J4C" allowfullscreen></iframe>
         </div>
     </div>
-
      <h2 class="team">Equipe</h2>
-    <p>Conheça os membros responsáveis por este projeto:</p>
+    <h4>Conheça os membros responsáveis por este projeto:</h4>
     <div class="team-container">
         <div class="member">
             <img src="https://github.com/JoaoFilho33.png" alt="João de Deus">
